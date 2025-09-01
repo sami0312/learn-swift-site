@@ -17,9 +17,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-primary">
-              DriveMaster<span className="text-secondary">Pro</span>
-            </h1>
+            <img 
+              src="/lovable-uploads/409b8ea6-8a1f-4abd-9e5b-f0a810a9a113.png" 
+              alt="Yan's Driving Lessons" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}

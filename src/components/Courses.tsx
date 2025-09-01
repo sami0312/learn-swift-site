@@ -7,68 +7,24 @@ const Courses = () => {
   const courses = [
     {
       id: 1,
-      title: "Beginner Course - 40 Hours",
+      title: "Manual Driving Course - 10 Hours",
       type: "Manual",
-      originalPrice: "£1,200",
-      salePrice: "£999",
-      badge: "Most Popular",
+      originalPrice: "£450",
+      salePrice: "£380",
+      badge: "Popular Choice",
       badgeVariant: "secondary" as const,
-      features: ["40 hours of lessons", "Theory test support", "Mock driving tests", "Flexible scheduling"],
+      features: ["10 hours of lessons", "Theory test support", "Mock driving tests", "Flexible scheduling"],
       soldOut: false
     },
     {
       id: 2,
-      title: "Intensive Course - 30 Hours",
+      title: "Automatic Driving Course - 10 Hours",
       type: "Automatic",
-      originalPrice: "£950",
-      salePrice: "£799",
-      badge: "Best Value",
+      originalPrice: "£470",
+      salePrice: "£400",
+      badge: "Easy Learning",
       badgeVariant: "default" as const,
-      features: ["30 hours intensive", "Fast-track learning", "Test booking included", "Pass guarantee"],
-      soldOut: false
-    },
-    {
-      id: 3,
-      title: "Semi-Intensive - 25 Hours",
-      type: "Manual",
-      originalPrice: "£800",
-      salePrice: "£679",
-      badge: null,
-      badgeVariant: null,
-      features: ["25 hours of lessons", "Spread over 4 weeks", "Theory support", "Free pickup/dropoff"],
-      soldOut: false
-    },
-    {
-      id: 4,
-      title: "Refresher Course - 10 Hours",
-      type: "Both",
-      originalPrice: "£350",
-      salePrice: "£299",
-      badge: null,
-      badgeVariant: null,
-      features: ["10 hours refresher", "Build confidence", "Brush up skills", "Nervous driver friendly"],
-      soldOut: false
-    },
-    {
-      id: 5,
-      title: "Premium Course - 50 Hours",
-      type: "Automatic",
-      originalPrice: "£1,500",
-      salePrice: "£1,199",
-      badge: "Premium",
-      badgeVariant: "destructive" as const,
-      features: ["50 hours comprehensive", "Premium instructor", "Mock tests included", "Theory & hazard prep"],
-      soldOut: true
-    },
-    {
-      id: 6,
-      title: "Pass Plus Course - 6 Hours",
-      type: "Both",
-      originalPrice: "£200",
-      salePrice: "£169",
-      badge: null,
-      badgeVariant: null,
-      features: ["6 hours advanced", "Post-test course", "Insurance discounts", "Motorway training"],
+      features: ["10 hours of lessons", "Easier to learn", "Test booking support", "Modern automatic cars"],
       soldOut: false
     }
   ];
@@ -83,7 +39,7 @@ const Courses = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {courses.map((course) => (
             <Card key={course.id} className={`course-card ${course.soldOut ? 'opacity-75' : ''}`}>
               <CardHeader className="relative">
@@ -96,13 +52,7 @@ const Courses = () => {
                   <span className="text-sm font-medium text-muted-foreground">{course.type}</span>
                   <div className="flex items-center text-muted-foreground">
                     <Clock className="h-4 w-4 mr-1" />
-                    <span className="text-sm">
-                      {course.title.includes('40') ? '40h' : 
-                       course.title.includes('30') ? '30h' : 
-                       course.title.includes('25') ? '25h' : 
-                       course.title.includes('10') ? '10h' :
-                       course.title.includes('50') ? '50h' : '6h'}
-                    </span>
+                    <span className="text-sm">10h</span>
                   </div>
                 </div>
                 <CardTitle className="text-xl mb-4">{course.title}</CardTitle>

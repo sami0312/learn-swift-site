@@ -18,15 +18,14 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    /* Driving school red - professional and trustworthy */
-    --primary: 0 84% 37%;
+    /* Yan's Brand Colors - Blue, Orange, Green Theme */
+    --primary: 200 100% 50%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 0 84% 32%;
+    --primary-hover: 200 100% 45%;
 
-    /* Success green for CTAs and highlights */
-    --secondary: 142 76% 36%;
+    --secondary: 15 100% 55%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 142 76% 31%;
+    --secondary-hover: 15 100% 50%;
 
     /* Neutral grays */
     --muted: 220 14% 96%;
@@ -39,7 +38,7 @@
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --success: 142 76% 36%;
+    --success: 120 100% 35%;
     --success-foreground: 0 0% 100%;
 
     --warning: 38 92% 50%;
@@ -48,14 +47,14 @@
     /* UI elements */
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 0 84% 37%;
+    --ring: 200 100% 50%;
 
     --radius: 0.75rem;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(0 84% 37%), hsl(0 84% 42%));
-    --gradient-secondary: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 41%));
-    --gradient-hero: linear-gradient(135deg, hsl(0 84% 37% / 0.9), hsl(142 76% 36% / 0.8));
+    /* Gradients - Yan's Brand Colors */
+    --gradient-primary: linear-gradient(135deg, hsl(200 100% 50%), hsl(200 100% 55%));
+    --gradient-secondary: linear-gradient(135deg, hsl(15 100% 55%), hsl(15 100% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(200 100% 50% / 0.9), hsl(15 100% 55% / 0.8));
 
     /* Shadows */
     --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.06);
@@ -91,13 +90,13 @@
     --popover: 215 28% 17%;
     --popover-foreground: 210 20% 98%;
 
-    --primary: 0 84% 37%;
+    --primary: 200 100% 50%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 0 84% 32%;
+    --primary-hover: 200 100% 45%;
 
-    --secondary: 142 76% 36%;
+    --secondary: 15 100% 55%;
     --secondary-foreground: 0 0% 100%;
-    --secondary-hover: 142 76% 31%;
+    --secondary-hover: 15 100% 50%;
 
     --muted: 215 28% 25%;
     --muted-foreground: 217 10% 64%;
@@ -110,7 +109,7 @@
 
     --border: 215 28% 25%;
     --input: 215 28% 25%;
-    --ring: 0 84% 37%;
+    --ring: 200 100% 50%;
   }
 }
 
